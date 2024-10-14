@@ -13,9 +13,9 @@ contract StakingContract is ReentrancyGuard, Ownable {
     uint256 public rewardRate;
     uint256 public lastUpdateTime;
     uint256 public rewardPerTokenStored;
-    uint256 public unstakeTimeLock = 7 days; 
+    uint256 public unstakeTimeLock = 1 minutes; 
     uint256 public unstakeFeePercent = 0; 
-    uint256 public minStakeTime = 30 days;
+    uint256 public minStakeTime = 2 minutes;
     uint256 public emissionStart;
     uint256 public emissionEnd;
     uint256 public feesAccrued;
